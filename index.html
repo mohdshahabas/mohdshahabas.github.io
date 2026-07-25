@@ -601,6 +601,33 @@
             letter-spacing: 1px;
         }
 
+        /* Other Works */
+        .other-works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .other-works-grid .video-placeholder {
+            height: 150px;
+        }
+
+        .other-works-grid .video-placeholder::after {
+            width: 50px;
+            height: 50px;
+            font-size: 2rem;
+            padding-left: 4px;
+        }
+
+        .other-works-grid .portfolio-info {
+            padding: 20px;
+        }
+
+        .other-works-grid .portfolio-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0; /* no description below it */
+        }
+
         /* Footer */
         footer {
             padding: 100px 10%;
@@ -629,14 +656,18 @@
         }
 
         @media (max-width: 768px) {
-            header h1 { font-size: 3.5rem; text-align: center; }
-            header h2 { text-align: center; font-size: 1rem; }
+            header h1 { font-size: 2.8rem; text-align: center; }
+            header h2 { text-align: center; font-size: 0.9rem; }
             .hero-content { flex-direction: column-reverse; justify-content: center; text-align: center; margin-top: 60px; }
             .hero-text { align-items: center; }
-            .hero-image-wrapper { width: 250px; height: 250px; }
+            .hero-image-wrapper { width: 250px; height: 250px; margin-bottom: 20px; }
             .about-grid { grid-template-columns: 1fr; }
             .skills-container { padding-left: 0; border-left: none; border-top: 2px solid var(--primary-color); padding-top: 40px; }
-            nav { display: none; } /* Simplified for fast edit feel on mobile */
+            nav { justify-content: center; padding: 15px 5%; }
+            nav ul { display: none; }
+            nav .logo { font-size: 1.2rem; }
+            .contact-links { flex-direction: column; gap: 20px; align-items: center; }
+            .section-title { font-size: 2.5rem; text-align: center; }
         }
     </style>
 </head>
@@ -752,7 +783,7 @@
         <h2 class="section-title reveal">FEATURED <span>WORK</span></h2>
         
         <div class="portfolio-grid">
-            <a href="https://www.youtube.com/shorts/QvpFQU3MCOk" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+            <a href="https://drive.google.com/file/d/1kIxOL3FGpk1zXbVLRL98BWcC9RG85nLr/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
                 <div class="video-placeholder">
                     <img src="images/Screenshot (93).png" alt="KIMERA EVO">
                 </div>
@@ -762,7 +793,7 @@
                 </div>
             </a>
 
-            <a href="https://www.youtube.com/shorts/JilsACpLZAs" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+            <a href="https://drive.google.com/file/d/12_dCTJca0bx1BXSgDM5Mwcq06E6d5GNG/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
                 <div class="video-placeholder">
                     <img src="images/Screenshot (95).png" alt="RED EVO 37">
                 </div>
@@ -772,7 +803,7 @@
                 </div>
             </a>
 
-            <a href="https://www.youtube.com/watch?v=kb8FM6t9RTM" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+            <a href="https://drive.google.com/file/d/1OVu1fpOJj1NJIQKkp1edEkWL2x-3EGsX/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
                 <div class="video-placeholder">
                     <img src="images/Screenshot (94).png" alt="ONE PIECE WANO EDIT">
                 </div>
@@ -784,14 +815,68 @@
         </div>
     </section>
 
+    <section id="other-works">
+        <h2 class="section-title reveal">OTHER <span>WORKS</span></h2>
+        
+        <div class="other-works-grid">
+            <a href="https://drive.google.com/file/d/1orL0xZ5XFAltG6PoCCrxIfP2lrFX3Jms/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+                <div class="video-placeholder">
+                    <img src="images/Screenshot (96).png" alt="MAZDA 787b">
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="glitch" data-text="MAZDA 787b">MAZDA 787b</h3>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1UjCli_pBxKez8YmxxFAtLCDbDaED6UUY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+                <div class="video-placeholder">
+                    <img src="images/Screenshot (97).png" alt="MOUNTAIN TOP">
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="glitch" data-text="MOUNTAIN TOP">MOUNTAIN TOP</h3>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1dNqadzhSGujfO1-Z-m7TAIl9ZgTakzu2/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+                <div class="video-placeholder">
+                    <img src="images/Screenshot (98).png" alt="TRECKKING EDIT">
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="glitch" data-text="TRECKKING EDIT">TRECKKING EDIT</h3>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/12GCXtsmWH4s_BuUPMpxZ4pcTXbT8xHgc/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+                <div class="video-placeholder">
+                    <img src="images/Screenshot (99).png" alt="TEMPLE">
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="glitch" data-text="TEMPLE">TEMPLE</h3>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/14mbIG0Hq24xi72CJxyjxTdVhYtg3s_nA/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+                <div class="video-placeholder">
+                    <img src="images/Screenshot (100).png" alt="HAMPI">
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="glitch" data-text="HAMPI">HAMPI</h3>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/14FEhCzLkDKpze2OIfTW_rqVs2J1OLCBl/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="portfolio-card reveal">
+                <div class="video-placeholder">
+                    <img src="images/Screenshot (101).png" alt="TRANSFER PIER AD">
+                </div>
+                <div class="portfolio-info">
+                    <h3 class="glitch" data-text="TRANSFER PIER AD">TRANSFER PIER AD</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
     <footer id="contact" class="reveal">
         <h2 class="glitch" data-text="LET'S WORK TOGETHER" style="font-size: 3rem; margin-bottom: 20px;">LET'S WORK TOGETHER</h2>
         <p style="color: #aaa; font-family: var(--font-mono);">LOC: KERALA, INDIA // STATUS: AVAILABLE FOR REMOTE GIGS</p>
 
         <div class="contact-links">
             <a href="https://www.freelancer.in/u/mohdshahabas?sb=t" target="_blank" rel="noopener noreferrer">FREELANCER</a>
-            <a href="https://www.youtube.com/@blackproblk" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
-            <a href="https://www.instagram.com/blackpro_blk?igsh=Z3N6eHp3bXJ5ZmFq" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+            <a href="https://drive.google.com/drive/folders/1c7PZ9nW3lKD3ST1oiruqIa7CFllm5TuM?usp=drive_link" target="_blank" rel="noopener noreferrer">MY WORKS</a>
             <a href="https://www.linkedin.com/in/mohammed-shahabas-1bb0a937a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
         </div>
 
